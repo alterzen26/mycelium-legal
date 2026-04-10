@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Mycelium</title>
+  <style>
+    :root {
+      --bg:       #0D0D0B;
+      --surface:  #151513;
+      --border:   #2a2a28;
+      --accent:   #3B6830;
+      --accent-l: #4e8a40;
+      --text:     #E8E4DC;
+      --muted:    #888880;
+      --font:     'Georgia', serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 0 0 80px;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+
+    header .wordmark {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-family: 'Georgia', serif;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 300;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    header .meta {
+      font-size: 12px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 0;
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 48px;
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 48px 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent-l);
+      margin: 28px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: 'Georgia', serif;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 0 0 16px 0;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    ul li::marker { color: var(--accent); }
+
+    .section-num {
+      display: inline-block;
+      background: var(--accent);
+      color: #0D0D0B;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 10px;
+      vertical-align: middle;
+      font-family: 'Georgia', serif;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    footer a {
+      color: var(--accent-l);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      h2 { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wordmark">Mycelium</div>
+  <h1>Terms of Service</h1>
+  <div class="meta">Effective Date: April 10, 2026 &nbsp;·&nbsp; Last Updated: April 10, 2026</div>
+</header>
+
+<div class="container">
+
+  <div class="intro">
+    Welcome to Mycelium — a mobile application focused on emotional wellness, community, and private journaling. By creating an account or using Mycelium, you agree to these Terms of Service. Please read them carefully.<br><br>
+    Mycelium is operated as a solo-developer project. Contact us at: <strong>legal@mycelium.app</strong>
+  </div>
+
+  <!-- 1 -->
+  <h2><span class="section-num">01</span> Eligibility and Age Requirement</h2>
+  <p>You must be at least 18 years old to create a Mycelium account. During onboarding, you are required to provide your date of birth. If our system determines that you are under 18, your account will not be created and any data you entered will be deleted immediately. Your date of birth is permanently locked after submission and cannot be changed.</p>
+  <p>By creating an account, you represent and warrant that you are 18 years of age or older and have the legal capacity to enter into these Terms.</p>
+
+  <!-- 2 -->
+  <h2><span class="section-num">02</span> Account Registration and Security</h2>
+  <h3>2.1 Account Creation</h3>
+  <p>To use Mycelium, you must register using a valid email address and a password that meets our security requirements. You are responsible for maintaining the confidentiality of your credentials.</p>
+  <h3>2.2 PIN Lock</h3>
+  <p>Mycelium offers an optional 4-digit PIN lock feature for additional security. Your PIN is stored as a bcrypt hash and is never stored or transmitted in plaintext. Forgetting your PIN requires verification via your registered email.</p>
+  <h3>2.3 Permanent Identity Fields</h3>
+  <p>The following fields are collected during onboarding and permanently locked after account creation:</p>
+  <ul>
+    <li>Date of birth</li>
+    <li>Gender</li>
+    <li>Country</li>
+  </ul>
+  <p>Your username and display name may be changed once. Theme preference may be updated at any time.</p>
+  <h3>2.4 Account Security</h3>
+  <p>You are responsible for all activity that occurs under your account. Notify us immediately at legal@mycelium.app if you suspect unauthorized access. We are not liable for losses resulting from unauthorized use of your account.</p>
+
+  <!-- 3 -->
+  <h2><span class="section-num">03</span> User Tiers</h2>
+  <p>Mycelium offers two membership tiers:</p>
+  <ul>
+    <li><strong>Underground (Free):</strong> Access to core features with daily usage limits as specified within the App.</li>
+    <li><strong>Surface (Premium):</strong> Enhanced limits, additional features, and access to the full Bloom Season library. Surface tier is a paid subscription billed through your device's app store.</li>
+  </ul>
+  <p>Tier-specific limits are defined in the App and may change with notice. We reserve the right to adjust tier features and pricing with reasonable advance notice.</p>
+
+  <!-- 4 -->
+  <h2><span class="section-num">04</span> User Content</h2>
+  <h3>4.1 Your Content</h3>
+  <p>Mycelium allows you to post diary entries, voicelogs, letters, comments, and other content ("User Content"). You retain ownership of your User Content.</p>
+  <h3>4.2 License to Us</h3>
+  <p>By posting User Content, you grant Mycelium a limited, non-exclusive, royalty-free license to store, display, and transmit your content solely as necessary to operate the App and provide services to you. We do not sell, license, or share your content with third parties for commercial purposes.</p>
+  <h3>4.3 Content Standards</h3>
+  <p>You agree not to post content that:</p>
+  <ul>
+    <li>Is unlawful, threatening, harassing, abusive, or harmful to minors</li>
+    <li>Infringes any intellectual property, privacy, or other rights of any person</li>
+    <li>Contains spam, malware, or unauthorized advertising</li>
+    <li>Impersonates any person or entity</li>
+    <li>Encourages or facilitates self-harm or suicide</li>
+    <li>Violates any applicable law or regulation</li>
+  </ul>
+  <h3>4.4 Content Expiry</h3>
+  <p>Grove posts expire publicly after 72 hours but are preserved privately in your personal Rootlog. Voicelog audio files for Underground users are deleted after 72 hours; metadata is retained. Surface users may archive up to 30 voicelogs. Drifting Letters expire if not delivered or opened within the time window shown in the App.</p>
+
+  <!-- 5 -->
+  <h2><span class="section-num">05</span> Identity and Anonymity</h2>
+  <h3>5.1 Masked and Revealed Identity</h3>
+  <p>Mycelium supports two posting modes: Masked (using a generated Spore name) and Revealed (using your display name). You choose your identity mode for each post or interaction.</p>
+  <h3>5.2 Internal Traceability</h3>
+  <p>While masked posts do not expose your identity to other users through the App's interface, your authorship of masked content is recorded internally in our database and traceable by us for safety and moderation purposes. Our systems are designed so that this internal linkage is never surfaced via our API to other users.</p>
+  <h3>5.3 Drifting Letters</h3>
+  <p>Drifting Letters are always sent in Masked mode. Sender identity is only revealed if both the sender and recipient mutually choose to surface. Sending Drifting Letters requires email verification.</p>
+
+  <!-- 6 -->
+  <h2><span class="section-num">06</span> Economy — Spores and Forest Tokens</h2>
+  <h3>6.1 Spores</h3>
+  <p>Spores are in-app reward points with no monetary value. They cannot be transferred between users, are not redeemable for cash, and may be adjusted or removed at our discretion.</p>
+  <h3>6.2 Forest Tokens</h3>
+  <p>Forest Tokens are purchased using real currency through your device's app store. They are non-refundable except where required by applicable law, have no monetary value outside the App, and may not be transferred between accounts.</p>
+  <h3>6.3 Purchases</h3>
+  <p>All payments are processed by Apple or Google and are subject to their respective terms and refund policies. Mycelium does not directly process payment card information.</p>
+
+  <!-- 7 -->
+  <h2><span class="section-num">07</span> Bloom Seasons and Journey Courses</h2>
+  <p>Two Seasons (Grief Underground and Rest) are always free. The full library is available to Surface subscribers or via individual purchase. Journey Courses are available for individual purchase (USD 3.99 each, lifetime access) or included with a Surface subscription. Purchases are final except where applicable law requires otherwise.</p>
+
+  <!-- 8 -->
+  <h2><span class="section-num">08</span> AI Companions and Sage</h2>
+  <h3>8.1 AI Companions</h3>
+  <p>Mycelium features AI-generated companion profiles (Lumis, Seren, and Kairo) that appear in the Grove feed. These companions are always clearly labeled as "Guide" and are not human users.</p>
+  <h3>8.2 Sage</h3>
+  <p>Sage is an AI-powered feature that delivers personalized prompts based on patterns in your Rootlog and mood history. Sage is not a substitute for professional mental health support. If you are experiencing a mental health crisis, please contact a qualified professional or a crisis service in your country.</p>
+
+  <!-- 9 -->
+  <h2><span class="section-num">09</span> Moderation and Enforcement</h2>
+  <p>We reserve the right to remove content or suspend accounts that violate these Terms. You may report content within the App. We may act on reports at our discretion and are not obligated to restore removed content or reinstated accounts.</p>
+  <h3>9.1 Blocks and Mutes</h3>
+  <p>You may block or mute other users. Blocks are mutual and silent — neither party is notified. Blocked users are excluded from feeds and interactions.</p>
+
+  <!-- 10 -->
+  <h2><span class="section-num">10</span> Prohibited Uses</h2>
+  <ul>
+    <li>Attempt to circumvent the 18+ age gate or any usage limits</li>
+    <li>Reverse engineer or attempt to extract the source code of the App</li>
+    <li>Use automated bots or scripts to access or interact with the App</li>
+    <li>Attempt to gain unauthorized access to our systems or other users' data</li>
+    <li>Use the App for any commercial purpose without our written permission</li>
+    <li>Create multiple accounts to circumvent bans or suspensions</li>
+  </ul>
+
+  <!-- 11 -->
+  <h2><span class="section-num">11</span> Intellectual Property</h2>
+  <p>All App content, design, trademarks, logos, and software are the property of Mycelium or its licensors. You may not reproduce, distribute, or create derivative works without our express written consent. User Content remains your property subject to the license granted in Section 4.2.</p>
+
+  <!-- 12 -->
+  <h2><span class="section-num">12</span> Disclaimer of Warranties</h2>
+  <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND. Mycelium is not a mental health service and does not provide medical, psychological, or therapeutic advice.</p>
+
+  <!-- 13 -->
+  <h2><span class="section-num">13</span> Limitation of Liability</h2>
+  <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, MYCELIUM AND ITS DEVELOPER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES. OUR TOTAL CUMULATIVE LIABILITY SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID TO US IN THE SIX MONTHS PRECEDING THE CLAIM OR (B) USD 50.</p>
+
+  <!-- 14 -->
+  <h2><span class="section-num">14</span> Indemnification</h2>
+  <p>You agree to indemnify and hold harmless Mycelium and its developer from any claims, damages, losses, or expenses arising from your use of the App, your User Content, or your violation of these Terms.</p>
+
+  <!-- 15 -->
+  <h2><span class="section-num">15</span> Account Deletion</h2>
+  <p>You may request account deletion at any time from within App Settings. A 30-day window applies during which you may cancel the request. After 30 days, your account and associated personal data are permanently deleted, subject to legal retention obligations.</p>
+
+  <!-- 16 -->
+  <h2><span class="section-num">16</span> Account Deactivation</h2>
+  <p>You may temporarily deactivate your account from Settings. Deactivated accounts are hidden from other users. Reactivation restores your account to its previous state.</p>
+
+  <!-- 17 -->
+  <h2><span class="section-num">17</span> Changes to These Terms</h2>
+  <p>We may update these Terms at any time. Material changes will be communicated via in-app notification or email at least 14 days before taking effect. Your continued use of the App after the effective date constitutes acceptance of the updated Terms.</p>
+
+  <!-- 18 -->
+  <h2><span class="section-num">18</span> Governing Law</h2>
+  <p>These Terms are governed by the laws of the Philippines, in compliance with Republic Act No. 10175 (Cybercrime Prevention Act) and other applicable Philippine law. Any dispute shall first be subject to good-faith negotiation before proceeding to binding arbitration or the appropriate courts.</p>
+
+  <!-- 19 -->
+  <h2><span class="section-num">19</span> Contact</h2>
+  <p>For questions about these Terms, contact us at: <strong>legal@mycelium.app</strong></p>
+
+  <footer>
+    <p>© Mycelium · <a href="privacy.html">Privacy Policy</a> · All rights reserved</p>
+    <p style="margin-top:8px;">hidden. connected. alive.</p>
+  </footer>
+
+</div>
+</body>
+</html>

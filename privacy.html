@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Mycelium</title>
+  <style>
+    :root {
+      --bg:       #0D0D0B;
+      --surface:  #151513;
+      --border:   #2a2a28;
+      --accent:   #3B6830;
+      --accent-l: #4e8a40;
+      --text:     #E8E4DC;
+      --muted:    #888880;
+      --font:     'Georgia', serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 0 0 80px;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+
+    header .wordmark {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-family: 'Georgia', serif;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 300;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    header .meta {
+      font-size: 12px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 0;
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 48px;
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .intro strong { color: var(--text); }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 48px 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent-l);
+      margin: 28px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 0 0 16px 0;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    ul li::marker { color: var(--accent); }
+
+    .section-num {
+      display: inline-block;
+      background: var(--accent);
+      color: #0D0D0B;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 10px;
+      vertical-align: middle;
+      letter-spacing: 1px;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid #C47B5A;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .highlight-box strong { color: var(--text); }
+
+    footer {
+      text-align: center;
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    footer a {
+      color: var(--accent-l);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      h2 { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wordmark">Mycelium</div>
+  <h1>Privacy Policy</h1>
+  <div class="meta">Effective Date: April 10, 2026 &nbsp;·&nbsp; Last Updated: April 10, 2026</div>
+</header>
+
+<div class="container">
+
+  <div class="intro">
+    Mycelium is committed to protecting your privacy. This Privacy Policy explains what information we collect, why we collect it, how it is used and stored, and your rights regarding that information.<br><br>
+    <strong>We do not sell your data.</strong> Emotional data stays private by default. Masked identities are never exposed to other users through our API.<br><br>
+    Contact us at: <strong>privacy@mycelium.app</strong>
+  </div>
+
+  <!-- 1 -->
+  <h2><span class="section-num">01</span> Data Controller</h2>
+  <p>Mycelium is operated as a solo-developer application. This policy is intended to comply with Republic Act No. 10173 (Data Privacy Act of 2012, Philippines) and, where applicable, the EU General Data Protection Regulation (GDPR).</p>
+  <p>For privacy-related inquiries: <strong>privacy@mycelium.app</strong></p>
+
+  <!-- 2 -->
+  <h2><span class="section-num">02</span> Information We Collect</h2>
+
+  <h3>2.1 Information You Provide Directly</h3>
+  <ul>
+    <li><strong>Email address</strong> — used for authentication and account recovery.</li>
+    <li><strong>Password</strong> — stored by Supabase Auth as a secure hash; never in plaintext.</li>
+    <li><strong>Date of birth</strong> — collected for the 18+ age gate; permanently locked. Your exact DOB is never displayed to other users.</li>
+    <li><strong>Gender</strong> — collected at onboarding; permanently locked. Used internally for Fallen Leaf matching. Not displayed publicly.</li>
+    <li><strong>Country</strong> — auto-detected from device locale; permanently locked. Displayed in the Grove feed at country level only.</li>
+    <li><strong>Username and display name</strong> — your chosen identity. Display name is required; username is unique and changeable once.</li>
+    <li><strong>Bio</strong> — optional; editable at any time.</li>
+    <li><strong>Avatar photo</strong> — optional; uploaded to secure storage. Permanently retained as emotionally high-value content.</li>
+    <li><strong>PIN</strong> — optional 4-digit app lock. Stored as a bcrypt hash. Never transmitted in plaintext.</li>
+    <li><strong>Mood check-ins</strong> — emotional mood labels and categories you submit voluntarily. Used to generate your Spore name and inform Sage recommendations.</li>
+    <li><strong>Diary entries and voicelogs</strong> — your Grove posts and audio recordings. Permanently stored in your private Rootlog. Underground audio deleted at 72 hours; metadata retained indefinitely.</li>
+    <li><strong>Drifting Letters</strong> — text content delivered anonymously to matched users and stored as masked records.</li>
+    <li><strong>Comments</strong> — text and voice comments on Grove posts and Sporecast cards.</li>
+    <li><strong>Bloom responses</strong> — your responses to Bloom Season prompts. Strictly private unless you choose to share to Grove.</li>
+    <li><strong>Theme preference</strong> — dark/light, stored in your profile.</li>
+  </ul>
+
+  <h3>2.2 Information Collected Automatically</h3>
+  <ul>
+    <li><strong>Push notification tokens</strong> — stored per device. Deleted on logout. Cleaned up after 90 days of inactivity.</li>
+    <li><strong>App error data</strong> — anonymous error reports (user ID only, no PII) sent to our error tracking service to help us fix bugs.</li>
+    <li><strong>Usage data</strong> — daily action counts stored to enforce tier limits; reset daily.</li>
+    <li><strong>Device platform</strong> — iOS or Android, stored with your push token.</li>
+  </ul>
+
+  <h3>2.3 Information Derived or Generated</h3>
+  <ul>
+    <li><strong>Age bracket</strong> — computed from your date of birth (e.g., "26–35"). Recalculated on your birthday. Used for Drift matching. Not your exact age.</li>
+    <li><strong>Spore name</strong> — auto-generated from your mood check-ins (e.g., "Hollow Birch"). Used as your masked identity.</li>
+    <li><strong>Rootlog entries</strong> — automatically generated records of your Grove posts and Bloom moments for your private journal.</li>
+    <li><strong>Grove role</strong> — (Sprout / Leaf / Grove / Elder) computed from your account age. Displayed on your profile.</li>
+    <li><strong>Consent records</strong> — a record of which version of our Terms and Privacy Policy you accepted, and the timestamp of acceptance.</li>
+  </ul>
+
+  <!-- 3 -->
+  <h2><span class="section-num">03</span> How We Use Your Information</h2>
+
+  <h3>3.1 To Provide and Operate the App</h3>
+  <ul>
+    <li>Authenticate you and maintain your account</li>
+    <li>Display your profile, posts, and content to you and (where you choose) other users</li>
+    <li>Match you with Drifting Letters and Fallen Leaves using your age bracket and gender</li>
+    <li>Deliver push notifications based on your preferences</li>
+    <li>Enforce tier limits and daily quotas</li>
+    <li>Process in-app purchases via Apple or Google</li>
+  </ul>
+
+  <h3>3.2 For Safety and Moderation</h3>
+  <ul>
+    <li>Review reported content for violations of our Terms of Service</li>
+    <li>Maintain internal traceability of masked posts for moderation purposes</li>
+    <li>Enforce the 18+ age gate</li>
+  </ul>
+
+  <h3>3.3 For Personalization</h3>
+  <ul>
+    <li>Deliver Sage prompts personalized to your mood and Rootlog patterns</li>
+    <li>Generate your Spore name from your mood check-ins</li>
+    <li>Calculate and update your age bracket and Grove role</li>
+  </ul>
+
+  <h3>3.4 For Legal Compliance</h3>
+  <ul>
+    <li>Maintain consent records as required by RA 10173 and GDPR</li>
+    <li>Respond to lawful requests from authorities</li>
+  </ul>
+
+  <!-- 4 -->
+  <h2><span class="section-num">04</span> Masked Identity — Important Disclosure</h2>
+
+  <div class="highlight-box">
+    <strong>Important:</strong> Masked posts do not expose your identity to other users through the App's interface. However, your authorship of masked content is stored internally in our database. We can use this to investigate safety concerns, respond to legal obligations, or enforce our Terms of Service. We treat masked posts as <em>pseudonymous</em>, not fully anonymous.
+  </div>
+
+  <p>Our API is designed so that your author identity is never returned in queries accessible to other users for masked posts. This disclosure is made in accordance with RA 10173 and GDPR transparency requirements.</p>
+
+  <!-- 5 -->
+  <h2><span class="section-num">05</span> Data Sharing and Third Parties</h2>
+
+  <h3>5.1 We Do Not Sell Your Data</h3>
+  <p>We do not sell, rent, or trade your personal information to third parties for marketing or commercial purposes.</p>
+
+  <h3>5.2 Service Providers</h3>
+  <ul>
+    <li><strong>Supabase</strong> — database hosting, authentication, and file storage. SOC 2 compliant.</li>
+    <li><strong>Apple App Store / Google Play Store</strong> — payment processing. We do not receive or store your payment card details.</li>
+    <li><strong>Expo Push Notifications</strong> — delivery of push notifications via Apple and Google infrastructure.</li>
+    <li><strong>Sentry</strong> — anonymous crash and error reporting. User ID only; no PII transmitted.</li>
+  </ul>
+
+  <h3>5.3 Legal Disclosure</h3>
+  <p>We may disclose your information if required by law, court order, or governmental authority, or if necessary to protect the rights, property, or safety of Mycelium, our users, or the public.</p>
+
+  <!-- 6 -->
+  <h2><span class="section-num">06</span> Data Retention</h2>
+  <ul>
+    <li><strong>Profile and identity data</strong> — retained for the lifetime of your account. Deleted within 30 days of a confirmed deletion request.</li>
+    <li><strong>Diary and Bloom content (Rootlog)</strong> — retained indefinitely in your private Rootlog unless you delete your account.</li>
+    <li><strong>Voicelog audio — Underground tier</strong> — audio files deleted at 72 hours. Metadata retained in Rootlog indefinitely.</li>
+    <li><strong>Voicelog audio — Surface tier</strong> — up to 30 voicelogs archived.</li>
+    <li><strong>Drifting Letters</strong> — retained until delivered, expired, or your account is deleted.</li>
+    <li><strong>Voice comments</strong> — audio files deleted after 7 days. Text metadata retained.</li>
+    <li><strong>Push tokens</strong> — deleted on logout. Automatically removed after 90 days of inactivity.</li>
+    <li><strong>Consent records</strong> — retained for the lifetime of your account and for a reasonable period after deletion, as required for legal compliance.</li>
+  </ul>
+
+  <!-- 7 -->
+  <h2><span class="section-num">07</span> Your Rights</h2>
+  <p>Under RA 10173 and, where applicable, GDPR, you have the following rights:</p>
+  <ul>
+    <li><strong>Right to Access</strong> — request a copy of the personal data we hold about you.</li>
+    <li><strong>Right to Correction</strong> — request correction of inaccurate or incomplete data.</li>
+    <li><strong>Right to Erasure</strong> — request deletion of your account and personal data.</li>
+    <li><strong>Right to Data Portability</strong> — request your personal data in a structured, machine-readable format.</li>
+    <li><strong>Right to Object</strong> — object to certain processing of your data.</li>
+    <li><strong>Right to Withdraw Consent</strong> — withdraw consent at any time without affecting the lawfulness of prior processing.</li>
+  </ul>
+  <p>To exercise any of these rights, contact us at <strong>privacy@mycelium.app</strong>. We will respond within 30 days.</p>
+
+  <!-- 8 -->
+  <h2><span class="section-num">08</span> Notification Preferences and Consent</h2>
+  <p>You may manage your notification preferences at any time from within App Settings. Crisis-related system notifications are always sent regardless of your preferences, as these may relate to your safety.</p>
+  <p>Your acceptance of these policies at signup is recorded with a timestamp and the document version you agreed to, in compliance with RA 10173 and GDPR requirements.</p>
+
+  <!-- 9 -->
+  <h2><span class="section-num">09</span> Children's Privacy</h2>
+  <p>Mycelium is not intended for users under 18. We do not knowingly collect personal information from minors. If we become aware that a user is under 18, we will immediately delete their account and all associated data. If you believe a minor has created an account, contact us at <strong>privacy@mycelium.app</strong>.</p>
+
+  <!-- 10 -->
+  <h2><span class="section-num">10</span> Security</h2>
+  <p>We implement reasonable technical and organizational measures to protect your personal data, including:</p>
+  <ul>
+    <li>Passwords stored as secure hashes via Supabase Auth; never in plaintext</li>
+    <li>PINs stored as bcrypt hashes; never transmitted in plaintext</li>
+    <li>Row-Level Security (RLS) policies ensuring users can only access their own data</li>
+    <li>Signed, expiring URLs for access to private audio files (1-hour validity)</li>
+    <li>API-level enforcement preventing masked author IDs from being returned to other users</li>
+  </ul>
+  <p>No system is completely secure. If you believe your account has been compromised, contact us immediately at <strong>privacy@mycelium.app</strong>.</p>
+
+  <!-- 11 -->
+  <h2><span class="section-num">11</span> Data Transfers</h2>
+  <p>Mycelium uses Supabase for data storage. Your data may be stored and processed in data centers outside your country of residence. By using the App, you consent to this transfer. We ensure our service providers maintain appropriate security standards.</p>
+
+  <!-- 12 -->
+  <h2><span class="section-num">12</span> Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Material changes will be communicated via in-app notification or email at least 14 days before taking effect. We maintain versioned consent records, so the version you agreed to is always recorded.</p>
+
+  <!-- 13 -->
+  <h2><span class="section-num">13</span> Contact and Complaints</h2>
+  <p>For privacy-related questions or to exercise your rights: <strong>privacy@mycelium.app</strong></p>
+  <p>If you are a resident of the Philippines and believe we have violated your rights under RA 10173, you may file a complaint with the National Privacy Commission (NPC) at <a href="https://www.privacy.gov.ph" target="_blank" style="color:#4e8a40;">www.privacy.gov.ph</a>.</p>
+
+  <footer>
+    <p>© Mycelium · <a href="terms.html">Terms of Service</a> · All rights reserved</p>
+    <p style="margin-top:8px;">hidden. connected. alive.</p>
+  </footer>
+
+</div>
+</body>
+</html>
